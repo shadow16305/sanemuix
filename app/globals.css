@@ -7,7 +7,7 @@
     position: relative;
     padding: 0;
     overflow: hidden;
-    transition: transform 0.25s;
+    transition: transform 0.5s;
     display: block;
   }
   .pseudo-text-effect::after {

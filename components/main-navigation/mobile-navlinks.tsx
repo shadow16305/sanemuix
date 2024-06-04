@@ -4,6 +4,7 @@ import { navLinks } from "@/constants/content";
 import { cn } from "@/libs/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Form from "../form/form";
 
 const MobileNavlinks = () => {
   const pathname = usePathname();
@@ -21,7 +22,7 @@ const MobileNavlinks = () => {
         </li>
       ))}
       <li className="py-3 px-4">
-        <button className="text-black text-xl text-center">Contact</button>
+        <Form navigation />
       </li>
     </ul>
   );

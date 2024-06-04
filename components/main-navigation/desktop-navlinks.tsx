@@ -4,12 +4,13 @@ import { navLinks } from "@/constants/content";
 import { cn } from "@/libs/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Form from "../form/form";
 
 const DesktopNavlinks = () => {
   const pathname = usePathname();
 
   return (
-    <ul className="bg-white/50 backdrop-blur-3xl hidden lg:flex items-center px-2 rounded-full">
+    <ul className="bg-white/50 backdrop-blur-lg hidden lg:flex items-center px-2 rounded-full">
       {navLinks.map((link) => (
         <li
           key={link.name}
@@ -21,7 +22,7 @@ const DesktopNavlinks = () => {
         </li>
       ))}
       <li className="py-3 px-4">
-        <button className="text-black text-xs">Contact</button>
+        <Form navigation />
       </li>
     </ul>
   );
