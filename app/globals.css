@@ -2,32 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@media screen and (min-width: 1000px) {
+  .pseudo-text-effect {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    transition: transform 0.25s;
+    display: block;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .pseudo-text-effect::after {
+    content: attr(data-after);
+    display: inline-block;
+    transform: translateY(120%);
+    position: absolute;
+    left: 0;
+    transition: inherit;
+  }
+  .pseudo-text-effect > span {
+    display: inline-block;
+    transform: translateY(0%);
+    transition: inherit;
+  }
+  .pseudo-text-effect:hover > span {
+    transform: translateY(-100%);
+  }
+  .pseudo-text-effect:hover::after {
+    transform: translateY(0%);
   }
 }
