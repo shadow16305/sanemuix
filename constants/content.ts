@@ -20,6 +20,9 @@ export const projects = [
     location: "Canada-Dubai",
     date: "2024",
     path: "/projects/humy",
+    category_one: "web-design",
+    category_two: "art-direction",
+    category_three: "concept",
   },
   {
     name: "HANDS UP",
@@ -27,6 +30,9 @@ export const projects = [
     location: "Toronto",
     date: "2023",
     path: "/projects/hands-up",
+    category_one: "web-design",
+    category_two: null,
+    category_three: "concept",
   },
   {
     name: "BSK ARCHITECTURE",
@@ -34,6 +40,9 @@ export const projects = [
     location: "Toronto",
     date: "2023",
     path: "/projects/bsk",
+    category_one: null,
+    category_two: null,
+    category_three: "concept",
   },
   {
     name: "BAYVIEW",
@@ -41,6 +50,9 @@ export const projects = [
     location: "Toronto",
     date: "2022",
     path: "/projects/bayview",
+    category_one: null,
+    category_two: null,
+    category_three: "concept",
   },
   {
     name: "MODALITY IT",
@@ -48,6 +60,9 @@ export const projects = [
     location: "Toronto",
     date: "2022",
     path: "/projects/modality",
+    category_one: "web-design",
+    category_two: "art-direction",
+    category_three: "concept",
   },
 ];
 
@@ -67,5 +82,17 @@ export const experience = [
   {
     text: "Graphic Designer Intern @ Aegean University",
     date: "2019-2019",
+  },
+];
+
+export const categories = [
+  {
+    name: "concept",
+  },
+  {
+    name: "art-direction",
+  },
+  {
+    name: "web-design",
   },
 ];

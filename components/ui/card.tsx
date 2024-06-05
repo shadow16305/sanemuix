@@ -18,11 +18,21 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ imgSrc, name, className, location, date, link }) => {
   const cursorCtx = useContext(CursorContext);
 
+  const handleCardHover = () => {
+    cursorCtx.onHover();
+    cursorCtx.onEnterCard();
+  };
+
+  const handleCardLeave = () => {
+    cursorCtx.onLeave();
+    cursorCtx.onLeaveCard();
+  };
+
   return (
     <Link
       href={link}
-      onMouseEnter={cursorCtx.onHover}
-      onMouseLeave={cursorCtx.onLeave}
+      onMouseEnter={handleCardHover}
+      onMouseLeave={handleCardLeave}
       className={cn(
         "rounded-3xl relative h-[34em] group hover:scale-95 transition-transform duration-500 w-full",
         className

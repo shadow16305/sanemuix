@@ -33,17 +33,18 @@ const DotCursor = () => {
     <>
       <motion.span
         className={cn(
-          "hidden lg:block rounded-full fixed -top-4 -left-5 z-[100] pointer-events-none p-2 backdrop-blur-sm",
-          isHovered ? "bg-black/10" : "bg-white"
+          "hidden lg:block rounded-full fixed -top-4 -left-5 z-[100] pointer-events-none p-2",
+          isHovered ? "bg-black/10" : "bg-white",
+          cursorCtx.isCard && "backdrop-blur-sm"
         )}
         animate={{
-          x: isHovered ? mousePos.x - 32 : mousePos.x,
-          y: isHovered ? mousePos.y - 32 : mousePos.y,
-          width: isHovered ? "80px" : "24px",
-          height: isHovered ? "80px" : "24px",
+          x: mousePos.x,
+          y: mousePos.y,
+          width: isHovered ? (cursorCtx.isCard ? "80px" : "44px") : "24px",
+          height: isHovered ? (cursorCtx.isCard ? "80px" : "44px") : "24px",
         }}
         transition={{
-          type: "tween",
+          type: "spring",
           x: { duration: 0 },
           y: { duration: 0 },
           width: { duration: 0.6, type: "spring" },
@@ -55,6 +56,9 @@ const DotCursor = () => {
             isHovered ? "bg-transparent" : "bg-black"
           )}
         />
+        {cursorCtx.isCard && (
+          <p className="text-white absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">OPEN</p>
+        )}
       </motion.span>
     </>
   );

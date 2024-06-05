@@ -1,5 +1,5 @@
 import { projects } from "@/constants/content";
-import Card from "./card";
+import Card from "../../../components/ui/card";
 import { cn } from "@/libs/utils";
 
 const Projects = () => {
