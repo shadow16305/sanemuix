@@ -29,7 +29,7 @@ const Form = ({ navigation }: { navigation?: boolean }) => {
         )}>
         <span>{navigation ? "Contact" : "Get in touch"}</span>
       </DrawerTrigger>
-      <DrawerContent className="md:w-1/3 py-16 px-6">
+      <DrawerContent className="md:w-1/3 py-16 px-6 !backdrop-blur-xl">
         <DrawerHeader className="flex justify-between">
           <DrawerTitle className="text-xs">Use this form to describe your project</DrawerTitle>
           <DrawerClose>
