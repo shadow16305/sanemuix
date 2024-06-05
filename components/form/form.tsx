@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Drawer,
   DrawerClose,
@@ -8,14 +10,20 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
+import { CursorContext } from "@/contexts/cursor-context";
 import { cn } from "@/libs/utils";
 import { ArrowRight, X } from "lucide-react";
+import { useContext } from "react";
 
 const Form = ({ navigation }: { navigation?: boolean }) => {
+  const cursorCtx = useContext(CursorContext);
+
   return (
     <Drawer direction="right" noBodyStyles disablePreventScroll>
       <DrawerTrigger
         data-after="Get in touch"
+        onMouseEnter={cursorCtx.onHover}
+        onMouseLeave={cursorCtx.onLeave}
         className={cn(
           navigation ? "text-xl md:text-xs text-black" : "pseudo-text-effect text-white text-[42px] md:text-[56px]"
         )}>

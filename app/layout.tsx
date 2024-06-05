@@ -4,6 +4,8 @@ import "./globals.css";
 import MainNavigation from "@/components/main-navigation/main-navigation";
 import { cn } from "@/libs/utils";
 import Footer from "@/components/footer";
+import { CursorContextProvider } from "@/contexts/cursor-context";
+import DotCursor from "@/components/ui/dot-cursor";
 
 const manrope = Manrope({ subsets: ["latin"] });
 
@@ -20,9 +22,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn("bg-[#f5f5f5] overflow-x-hidden", manrope.className)}>
-        <MainNavigation />
-        {children}
-        <Footer />
+        <CursorContextProvider>
+          <MainNavigation />
+          <DotCursor />
+          {children}
+          <Footer />
+        </CursorContextProvider>
       </body>
     </html>
   );

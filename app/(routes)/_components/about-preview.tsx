@@ -1,6 +1,12 @@
+"use client";
+
+import { CursorContext } from "@/contexts/cursor-context";
 import Link from "next/link";
+import { useContext } from "react";
 
 const AboutPreview = () => {
+  const cursorCtx = useContext(CursorContext);
+
   return (
     <section className="w-full flex flex-col-reverse md:flex-row md:justify-between mt-16 md:mt-24">
       <div className="flex flex-col gap-y-4 mt-16 md:mt-0">
@@ -25,7 +31,12 @@ const AboutPreview = () => {
             creating user interfaces for websites, software applications, and mobile apps.
           </p>
           <div className="py-2 px-4 border border-black rounded-full w-fit mt-6 md:mt-0">
-            <Link href="/about" data-after="Read More" className="pseudo-text-effect">
+            <Link
+              href="/about"
+              onMouseEnter={cursorCtx.onHover}
+              onMouseLeave={cursorCtx.onLeave}
+              data-after="Read More"
+              className="pseudo-text-effect">
               <span>Read More</span>
             </Link>
           </div>
