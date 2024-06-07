@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section className="w-full mx-auto flex flex-col-reverse md:flex-row items-center md:justify-between pt-24 md:pt-56">
+    <section className="w-full mx-auto flex flex-col-reverse md:flex-row items-center md:justify-between pt-24 md:pt-32 lg:pt-40 xl:pt-56">
       <div className="flex flex-col gap-y-6 text-xs mt-6 md:mt-0">
         <p className="md:max-w-40 leading-normal">
           As a UX designer, I'm driven by the thrill of dissecting the intricacies of user interaction, understanding

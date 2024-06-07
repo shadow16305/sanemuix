@@ -4,7 +4,7 @@ import Categories from "./categories";
 
 const ProjectSection = () => {
   return (
-    <section className="space-y-6 mt-16 md:mt-24">
+    <section className="space-y-6 mt-16 lg:mt-24">
       <Categories />
       <div className="flex flex-wrap justify-between gap-y-7">
         {projects.map((project) => (

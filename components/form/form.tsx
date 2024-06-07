@@ -25,11 +25,11 @@ const Form = ({ navigation }: { navigation?: boolean }) => {
         onMouseEnter={cursorCtx.onHover}
         onMouseLeave={cursorCtx.onLeave}
         className={cn(
-          navigation ? "text-xl md:text-xs text-black" : "pseudo-text-effect text-white text-[42px] md:text-[56px]"
+          navigation ? "text-xl lg:text-xs text-black" : "pseudo-text-effect text-white text-[42px] md:text-[56px]"
         )}>
         <span>{navigation ? "Contact" : "Get in touch"}</span>
       </DrawerTrigger>
-      <DrawerContent className="md:w-1/3 py-6 md:py-16 px-6 !backdrop-blur-xl">
+      <DrawerContent className="xl:w-1/3 lg:w-1/2 md:w-2/3 py-6 md:py-16 px-6 !backdrop-blur-xl">
         <DrawerHeader className="flex justify-between">
           <DrawerTitle className="text-xs">Use this form to describe your project</DrawerTitle>
           <DrawerClose>

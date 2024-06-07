@@ -35,7 +35,7 @@ const Card: React.FC<CardProps> = ({ imgSrc, name, className, location, date, li
       onMouseLeave={handleCardLeave}
       onClick={handleCardLeave}
       className={cn(
-        "rounded-3xl relative h-[34em] group hover:scale-95 transition-transform duration-500 w-full",
+        "rounded-3xl relative h-[284px] md:h-[320px] lg:h-[376px] xl:h-[400px] 2xl:h-[34em] group hover:scale-95 transition-transform duration-500 w-full",
         className
       )}>
       <Image src={imgSrc} alt={name} fill className="object-cover rounded-3xl" />

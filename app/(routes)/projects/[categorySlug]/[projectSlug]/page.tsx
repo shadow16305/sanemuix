@@ -22,7 +22,7 @@ const ProjectDetailsPage = ({ params }: { params: { projectSlug: string } }) => 
 
   return (
     <Container className="pt-16 md:pt-24 overflow-y-hidden">
-      <div className="relative w-full h-[340px] md:h-[640px]">
+      <div className="relative w-full h-[340px] md:h-[540px] 2xl:h-[640px]">
         <Image src={project.img} alt={project.name} fill className="object-cover rounded-3xl" />
       </div>
       <ProjectInfo project={project} />

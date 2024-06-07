@@ -19,10 +19,11 @@ const AboutPreview = () => {
           <li>Strategy</li>
         </ul>
       </div>
-      <div className="flex flex-col gap-y-6 md:w-[55%]">
-        <h2 className="text-[22px] md:text-[2.3em] w-11/12 md:w-full">
-          Studied Graphic Design at <span className="border border-black py-1 px-4 rounded-full">Egean University</span>{" "}
-          and have been working in the design industry for 5 years.
+      <div className="flex flex-col gap-y-6 md:w-9/12 2xl:w-[55%]">
+        <h2 className="text-[22px] md:text-[2.3em] w-11/12 max-w-[340px] md:max-w-none md:w-full">
+          Studied Graphic Design at{" "}
+          <span className="border border-black py-0.5 px-3 md:py-1 md:px-4 rounded-full">Egean University</span> and
+          have been working in the design industry for 5 years.
         </h2>
         <div className="flex flex-col md:flex-row w-full justify-between md:items-end">
           <p className="text-sm md:text-xs md:w-2/3">

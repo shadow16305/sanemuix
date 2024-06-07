@@ -30,7 +30,7 @@ const ProjectInfo: React.FC<ProjectInfoProps> = ({ project }) => {
         </p>
         <h1 className="text-[2.5em] max-w-[280px] hidden md:block">{project.name}</h1>
       </div>
-      <div className="md:space-y-24 md:w-[60%] mt-6">
+      <div className="md:space-y-24 md:w-[60%] mt-6 md:mt-0">
         <div className="flex flex-col md:flex-row gap-y-6 justify-between">
           <div className="flex gap-x-6 text-xs font-semibold">
             {project.category_one && <p>{project.category_one === "web-design" && "Web Design"}</p>}
@@ -50,25 +50,25 @@ const ProjectInfo: React.FC<ProjectInfoProps> = ({ project }) => {
           </div>
           <h1 className="text-[22px] md:hidden mt-2">{project.name}</h1>
         </div>
-        <ul className="mt-6 space-y-6">
+        <ul className="mt-6 md:mt-0 space-y-6">
           <li className="flex flex-col md:flex-row md:justify-between md:items-center border-b border-b-[#cfd1d7] pb-4 md:pb-6">
             <span className="text-xs">Client</span>
-            <p className="text-base md:text-[1.3em] pt-4">{project.name}</p>
+            <p className="text-base lg:text-[1.3em] pt-4 md:pt-0">{project.name}</p>
           </li>
           <li className="flex flex-col md:flex-row md:justify-between md:items-center border-b border-b-[#cfd1d7] pb-4 md:pb-6">
             <span className="text-xs">Year</span>
-            <p className="text-base md:text-[1.3em] pt-4">{project.date}</p>
+            <p className="text-base lg:text-[1.3em] pt-4 md:pt-0">{project.date}</p>
           </li>
           <li className="flex flex-col md:flex-row md:justify-between md:items-center border-b border-b-[#cfd1d7] pb-4 md:pb-6">
             <span className="text-xs">Scope of Work</span>
-            <p className="text-base md:text-[1.3em] pt-4">{project.sop}</p>
+            <p className="text-base lg:text-[1.3em] pt-4 md:pt-0">{project.sop}</p>
           </li>
           <li className="flex flex-col md:flex-row md:justify-between md:items-center border-b border-b-[#cfd1d7] pb-4 md:pb-6">
             <span className="text-xs">Location</span>
-            <p className="text-base md:text-[1.3em] pt-4">{project.location}</p>
+            <p className="text-base lg:text-[1.3em] pt-4 md:pt-0">{project.location}</p>
           </li>
         </ul>
-        <p className="text-xl mt-6 md:text-[1.75em] leading-[1.3]">{project.description}</p>
+        <p className="text-xl mt-6 lg:text-[1.75em] leading-[1.3]">{project.description}</p>
       </div>
     </section>
   );
