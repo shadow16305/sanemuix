@@ -29,7 +29,7 @@ const Form = ({ navigation }: { navigation?: boolean }) => {
         )}>
         <span>{navigation ? "Contact" : "Get in touch"}</span>
       </DrawerTrigger>
-      <DrawerContent className="md:w-1/3 py-16 px-6 !backdrop-blur-xl">
+      <DrawerContent className="md:w-1/3 py-6 md:py-16 px-6 !backdrop-blur-xl">
         <DrawerHeader className="flex justify-between">
           <DrawerTitle className="text-xs">Use this form to describe your project</DrawerTitle>
           <DrawerClose>
@@ -76,7 +76,12 @@ const Form = ({ navigation }: { navigation?: boolean }) => {
               />
             </p>
             <div className="bg-black rounded-3xl px-4 py-2 text-white flex items-center gap-x-2 w-fit text-sm mt-12">
-              <button type="submit" data-after="Contact Us" className="pseudo-text-effect">
+              <button
+                type="submit"
+                data-after="Contact Us"
+                className="pseudo-text-effect"
+                onMouseEnter={cursorCtx.onHover}
+                onMouseLeave={cursorCtx.onLeave}>
                 <span>Contact Us</span>
               </button>
               <ArrowRight className="size-4" />
@@ -84,7 +89,10 @@ const Form = ({ navigation }: { navigation?: boolean }) => {
           </form>
         </DrawerDescription>
         <DrawerFooter>
-          <a data-after="sanemuix@gmail.com" href="mailto:sanemuix@gmail.com" className="text-xs pseudo-text-effect">
+          <a
+            data-after="sanemuix@gmail.com"
+            href="mailto:sanemuix@gmail.com"
+            className="text-xs pseudo-text-effect text-center md:text-start">
             <span>sanemuix@gmail.com</span>
           </a>
         </DrawerFooter>

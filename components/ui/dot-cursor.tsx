@@ -40,22 +40,25 @@ const DotCursor = () => {
         animate={{
           x: mousePos.x,
           y: mousePos.y,
-          width: isHovered ? (cursorCtx.isCard ? "80px" : "44px") : "24px",
-          height: isHovered ? (cursorCtx.isCard ? "80px" : "44px") : "24px",
+          width: isHovered ? (cursorCtx.isCard ? "96px" : "56px") : "24px",
+          height: isHovered ? (cursorCtx.isCard ? "96px" : "56px") : "24px",
         }}
         transition={{
           type: "spring",
           x: { duration: 0 },
           y: { duration: 0 },
-          width: { duration: 0.6, type: "spring" },
-          height: { duration: 0.6, type: "spring" },
+          width: { duration: 0.8, type: "spring" },
+          height: { duration: 0.8, type: "spring" },
         }}>
-        <span
-          className={cn(
-            "absolute size-3 -translate-x-1/2 bg-black -translate-y-1/2 rounded-full left-1/2 top-1/2",
-            isHovered ? "bg-transparent" : "bg-black"
-          )}
-        />
+        {!isHovered && (
+          <motion.span
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.8 }}
+            className={cn("absolute size-3 -translate-x-1/2 bg-black -translate-y-1/2 rounded-full left-1/2 top-1/2")}
+          />
+        )}
         {cursorCtx.isCard && (
           <p className="text-white absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">OPEN</p>
         )}

@@ -1,9 +1,9 @@
 import MobileNavlinks from "./mobile-navlinks";
 
-const MobileMenu = () => {
+const MobileMenu = ({ toggleOpen }: { toggleOpen: () => void }) => {
   return (
     <div className="flex flex-col items-center justify-center h-full">
-      <MobileNavlinks />
+      <MobileNavlinks toggleOpen={toggleOpen} />
       <div className="flex-col flex items-center mt-8">
         <span className="text-xs text-grey-40">Social:</span>
         <a
