@@ -23,7 +23,7 @@ const CategoryPage = ({ params }: { params: { categorySlug: string } }) => {
           <span>All works</span>
         </Link>
       </div>
-      <h1 className="text-[4em] mb-4">
+      <h1 className="text-[28px] md:text-[4em] mb-4">
         {currentCategory === "concept" && "Concept"}
         {currentCategory === "web-design" && "Web Design"}
         {currentCategory === "art-direction" && "Art Direction"}

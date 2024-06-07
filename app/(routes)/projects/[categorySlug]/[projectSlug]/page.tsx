@@ -28,7 +28,7 @@ const ProjectDetailsPage = ({ params }: { params: { projectSlug: string } }) => 
       <ProjectInfo project={project} />
       <ProjectPreviews previews={previews} />
       {project.preview_5 && !project.preview_6 && (
-        <div className="relative w-full mt-7 h-[1100px]">
+        <div className="relative w-full mt-7 h-[262px] md:h-[1100px]">
           <Image src={project.preview_5} alt={project.name} fill className="rounded-3xl" />
         </div>
       )}
