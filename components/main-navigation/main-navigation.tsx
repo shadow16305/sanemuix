@@ -7,7 +7,7 @@ import { useContext, useState } from "react";
 import MobileMenu from "./mobile-menu";
 import { AnimatePresence, motion, useScroll, useTransform } from "framer-motion";
 import { cn } from "@/libs/utils";
-import { useIsDesktop } from "@/hooks/useIsDektop";
+import { useIsDesktop } from "@/hooks/use-is-desktop";
 import { CursorContext } from "@/contexts/cursor-context";
 
 const MainNavigation = () => {

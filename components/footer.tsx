@@ -3,7 +3,7 @@ import Container from "./ui/container";
 
 const Footer = () => {
   return (
-    <footer className="bg-black pt-24 pb-10 mt-16 lg:mt-24 relative">
+    <footer className="bg-black pt-24 pb-10 mt-16 lg:mt-28 relative">
       <Container>
         <div className="flex justify-between text-white text-xs">
           <span>Portfolio 2022-2024</span>

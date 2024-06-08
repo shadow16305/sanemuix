@@ -9,7 +9,7 @@ import Experience from "./_components/experience";
 export default function Home() {
   return (
     <>
-      <Container>
+      <Container className="overflow-y-hidden">
         <Hero />
         <Videos />
         <Projects />

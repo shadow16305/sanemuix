@@ -1,6 +1,6 @@
 const Videos = () => {
   return (
-    <section className="w-full grid grid-cols-2 gap-x-4 md:gap-x-12 my-16 md:my-24">
+    <section className="w-full grid grid-cols-2 gap-x-4 md:gap-x-12 my-16 md:my-28">
       <iframe
         src="https://www.youtube.com/embed/EiMenaSnFmo?si=JbZtKjDjHfCo-u6Q"
         className="rounded-xl w-full h-[200px] md:h-[240px] lg:h-[320px] xl:h-[360px] 2xl:h-[400px]"

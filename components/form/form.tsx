@@ -29,7 +29,7 @@ const Form = ({ navigation }: { navigation?: boolean }) => {
         )}>
         <span>{navigation ? "Contact" : "Get in touch"}</span>
       </DrawerTrigger>
-      <DrawerContent className="xl:w-1/3 lg:w-1/2 md:w-2/3 py-6 md:py-16 px-6 !backdrop-blur-xl">
+      <DrawerContent className=" lg:w-[640px] md:w-2/3 py-6 md:py-16 px-6 !backdrop-blur-xl">
         <DrawerHeader className="flex justify-between">
           <DrawerTitle className="text-xs">Use this form to describe your project</DrawerTitle>
           <DrawerClose>
@@ -38,39 +38,39 @@ const Form = ({ navigation }: { navigation?: boolean }) => {
         </DrawerHeader>
         <DrawerDescription className="text-xl text-black mt-20">
           <form action="">
-            <p className="leading-loose">
+            <p className="leading-[2.2] font-medium">
               Hi, my name is{" "}
               <input
                 type="text"
-                className="bg-transparent border-b-neutral-500 border-b ml-2 focus:outline-none placeholder:text-neutral-500"
+                className="bg-transparent border-b-neutral-500 border-b ml-2 focus:outline-none placeholder:text-neutral-500 w-[250px]"
                 placeholder="John Smith"
                 required
               />
               . You can answer me on this email{" "}
               <input
                 type="email"
-                className="bg-transparent border-b-neutral-500 border-b ml-2 focus:outline-none placeholder:text-neutral-500"
+                className="bg-transparent border-b-neutral-500 border-b ml-2 focus:outline-none placeholder:text-neutral-500 w-[250px]"
                 placeholder="email@box.com"
                 required
               />
               . I am looking for help with a{" "}
               <input
                 type="text"
-                className="bg-transparent border-b-neutral-500 border-b ml-2 focus:outline-none placeholder:text-neutral-500"
+                className="bg-transparent border-b-neutral-500 border-b ml-2 focus:outline-none placeholder:text-neutral-500 w-[250px]"
                 placeholder="website, design, etc"
                 required
               />
               . My budget is ${" "}
               <input
                 type="text"
-                className="bg-transparent border-b-neutral-500 border-b ml-2 focus:outline-none placeholder:text-neutral-500"
+                className="bg-transparent border-b-neutral-500 border-b ml-2 focus:outline-none placeholder:text-neutral-500 w-[100px]"
                 placeholder="1000"
                 required
               />{" "}
               and I need it done by{" "}
               <input
                 type="text"
-                className="bg-transparent border-b-neutral-500 border-b ml-2 focus:outline-none placeholder:text-neutral-500"
+                className="bg-transparent border-b-neutral-500 border-b ml-2 focus:outline-none placeholder:text-neutral-500 w-[250px]"
                 placeholder="November 24, 2019"
                 required
               />
