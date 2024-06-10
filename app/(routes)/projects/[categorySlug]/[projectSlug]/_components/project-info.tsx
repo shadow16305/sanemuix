@@ -28,7 +28,7 @@ const ProjectInfo: React.FC<ProjectInfoProps> = ({ project }) => {
           <span className="font-semibold">Client:</span>
           <span>{project.name}</span>
         </p>
-        <h1 className="text-[2.5em] max-w-[280px] hidden md:block">{project.name}</h1>
+        <h1 className="text-[2.5em] max-w-[300px] hidden md:block">{project.name}</h1>
       </div>
       <div className="md:space-y-24 md:w-[60%] mt-6 md:mt-0">
         <div className="flex flex-col md:flex-row gap-y-6 justify-between">

@@ -20,7 +20,7 @@ const AboutPreview = () => {
         </ul>
       </div>
       <div className="flex flex-col gap-y-6 md:w-9/12 lg:w-3/4 xl:w-[840px] 2xl:w-7/12">
-        <h2 className="text-[22px] md:text-[2.3em] 2xl:text-[2.6em] w-11/12 max-w-[340px] md:max-w-none md:w-full">
+        <h2 className="text-[22px] md:text-[2.5em] w-11/12 max-w-[340px] md:max-w-none md:w-full">
           Studied Graphic Design at{" "}
           <span className="border border-black py-0.5 px-3 md:py-1 md:px-4 rounded-full">Egean University</span> and
           have been working in the design industry for 5 years.

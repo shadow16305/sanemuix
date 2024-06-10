@@ -4,7 +4,7 @@ import Projects from "./_components/projects";
 import Videos from "./_components/videos";
 import Container from "@/components/ui/container";
 import ImageParallax from "./_components/image-parallax";
-import Experience from "./_components/experience";
+import InfoList from "@/components/ui/info-list";
 
 export default function Home() {
   return (
@@ -17,7 +17,18 @@ export default function Home() {
       </Container>
       <ImageParallax />
       <Container>
-        <Experience />
+        <InfoList
+          title="Experience"
+          text_1_left="UI/UX Designer @ Agency"
+          text_1_right="2022-2024"
+          text_2_left="Freelancer"
+          text_2_right="2021-2022"
+          text_3_left="UI/UX Designer Intern @ Moux Agency"
+          text_3_right="2020-2021"
+          text_4_left="Graphic Designer Intern @ Aegean University"
+          text_4_right="2019-2019"
+          text_right_size="md:text-[1.3em]"
+        />
       </Container>
     </>
   );

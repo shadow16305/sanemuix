@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn("bg-[#f5f5f5] overflow-x-hidden", manrope.className)}>
+      <body className={cn("bg-[#f5f5f5] overflow-x-hidden text-[1vw]", manrope.className)}>
         <CursorContextProvider>
           <MainNavigation />
           <DotCursor />
