@@ -6,7 +6,7 @@ import Hamburger from "./hamburger";
 import { useContext, useState } from "react";
 import MobileMenu from "./mobile-menu";
 import { AnimatePresence, motion, useScroll, useTransform } from "framer-motion";
-import { cn } from "@/libs/utils";
+import { cn } from "@/lib/utils";
 import { useIsDesktop } from "@/hooks/use-is-desktop";
 import { CursorContext } from "@/contexts/cursor-context";
 

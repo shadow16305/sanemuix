@@ -1,5 +1,5 @@
 import React, { Dispatch, SetStateAction } from "react";
-import { cn } from "@/libs/utils";
+import { cn } from "@/lib/utils";
 
 interface HamburgerProps {
   isOpen: boolean;

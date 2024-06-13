@@ -11,7 +11,7 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import { CursorContext } from "@/contexts/cursor-context";
-import { cn } from "@/libs/utils";
+import { cn } from "@/lib/utils";
 import { ArrowRight, X } from "lucide-react";
 import { useContext } from "react";
 

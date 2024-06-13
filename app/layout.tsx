@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
 import MainNavigation from "@/components/main-navigation/main-navigation";
-import { cn } from "@/libs/utils";
+import { cn } from "@/lib/utils";
 import Footer from "@/components/footer";
 import { CursorContextProvider } from "@/contexts/cursor-context";
 import DotCursor from "@/components/ui/dot-cursor";

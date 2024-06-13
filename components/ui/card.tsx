@@ -1,7 +1,7 @@
 "use client";
 
 import { CursorContext } from "@/contexts/cursor-context";
-import { cn } from "@/libs/utils";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { useContext } from "react";
