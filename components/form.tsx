@@ -25,7 +25,9 @@ const Form = ({ navigation }: { navigation?: boolean }) => {
         onMouseEnter={cursorCtx.onHover}
         onMouseLeave={cursorCtx.onLeave}
         className={cn(
-          navigation ? "text-xl lg:text-xs text-black" : "pseudo-text-effect text-white text-[42px] md:text-[56px]"
+          navigation
+            ? "text-xl lg:text-[13px] text-almost-black"
+            : "pseudo-text-effect text-white text-[42px] md:text-[56px]"
         )}>
         <span>{navigation ? "Contact" : "Get in touch"}</span>
       </DrawerTrigger>
@@ -36,7 +38,7 @@ const Form = ({ navigation }: { navigation?: boolean }) => {
             <X />
           </DrawerClose>
         </DrawerHeader>
-        <DrawerDescription className="text-xl text-black mt-20">
+        <DrawerDescription className="text-xl text-almost-black mt-20">
           <form action="">
             <p className="leading-[2.2] font-medium">
               Hi, my name is{" "}

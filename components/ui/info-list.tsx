@@ -18,6 +18,7 @@ interface InfoListProps {
   containerClassName?: string;
   text_left_size?: string;
   titleClass?: string;
+  width?: string;
 }
 
 const InfoList: React.FC<InfoListProps> = ({
@@ -38,15 +39,16 @@ const InfoList: React.FC<InfoListProps> = ({
   containerClassName,
   text_left_size,
   titleClass,
+  width,
 }) => {
   return (
     <div
       className={cn(
-        "flex flex-col md:flex-row md:justify-between text-black mt-16 md:mt-24 lg:mt-32",
+        "flex flex-col md:flex-row md:justify-between text-almost-black mt-16 md:mt-24 lg:mt-32",
         containerClassName
       )}>
       <span className={cn("text-lg", titleClass)}>{title}</span>
-      <ul className="md:w-2/3 lg:w-7/12 mt-4 md:mt-0">
+      <ul className={cn("md:w-2/3 lg:w-7/12 mt-4 md:mt-0", width)}>
         <li className="flex flex-col md:flex-row md:justify-between gap-y-2 border-b border-[#cfd1d7] pb-7">
           <p className={cn("text-base lg:text-[1.3em]", text_left_size)}>{text_1_left}</p>
           <span className={cn("md:max-w-[41.6%]", text_right_size)}>{text_1_right}</span>

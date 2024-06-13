@@ -1,6 +1,6 @@
 const TextBlock = () => {
   return (
-    <article className="space-y-8 lg:w-9/12 xl:w-8/12 2xl:w-7/12">
+    <article className="space-y-8 lg:w-7/12">
       <h2 className="text-[22px] lg:text-[2.5em] leading-normal md:leading-[1.2] md:flex md:flex-col md:gap-y-4 max-w-[80%] md:max-w-none">
         <span>
           Passion for Design: From{" "}
@@ -11,7 +11,7 @@ const TextBlock = () => {
           Journey So Far.
         </span>
       </h2>
-      <div className="space-y-6 md:w-3/4 text-[13px] md:text-lg">
+      <div className="space-y-6 md:w-3/4 text-[13px] md:text-[1.1em]">
         <p>
           Hey there, I'm Sanem, a design enthusiast with a journey that spans 4+ years working for agencies and as a
           freelancer. During this time, I have honed my skills in design principles, user experience, and creative

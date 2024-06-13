@@ -157,6 +157,9 @@ export const experience = [
 
 export const categories = [
   {
+    name: "shopify",
+  },
+  {
     name: "concept",
   },
   {

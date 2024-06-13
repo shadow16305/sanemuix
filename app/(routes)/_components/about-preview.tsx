@@ -11,7 +11,7 @@ const AboutPreview = () => {
     <section className="w-full flex flex-col-reverse md:flex-row md:justify-between mt-16 md:mt-24">
       <div className="flex flex-col gap-y-4 mt-16 md:mt-0">
         <span className="text-xs text-grey-40">Skills</span>
-        <ul className="text-xs text-black">
+        <ul className="text-xs text-almost-black">
           <li>UI/UX</li>
           <li>Branding</li>
           <li>Web Design</li>
@@ -19,14 +19,14 @@ const AboutPreview = () => {
           <li>Strategy</li>
         </ul>
       </div>
-      <div className="flex flex-col gap-y-6 md:w-9/12 lg:w-3/4 xl:w-[840px] 2xl:w-7/12">
+      <div className="flex flex-col gap-y-6 md:w-9/12 lg:w-3/4 xl:w-[840px] 2xl:w-[60%]">
         <h2 className="text-[22px] md:text-[2.5em] w-11/12 max-w-[340px] md:max-w-none md:w-full">
           Studied Graphic Design at{" "}
           <span className="border border-black py-0.5 px-3 md:py-1 md:px-4 rounded-full">Egean University</span> and
           have been working in the design industry for 5 years.
         </h2>
         <div className="flex flex-col md:flex-row w-full justify-between md:items-end">
-          <p className="text-sm md:text-xs md:w-2/3">
+          <p className="text-sm md:text-xs lg:text-base leading-normal md:w-2/3">
             My passion for design started when I was young, and I have pursued this passion by working with a variety of
             clients and projects for 5 years. I have worked with startups, small businesses, and large corporations,
             creating user interfaces for websites, software applications, and mobile apps.
@@ -37,7 +37,7 @@ const AboutPreview = () => {
               onMouseEnter={cursorCtx.onHover}
               onMouseLeave={cursorCtx.onLeave}
               data-after="Read More"
-              className="pseudo-text-effect">
+              className="pseudo-text-effect text-[15px]">
               <span>Read More</span>
             </Link>
           </div>

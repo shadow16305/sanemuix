@@ -4,7 +4,7 @@ import { navLinks } from "@/constants/content";
 import { cn } from "@/libs/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Form from "../form/form";
+import Form from "../form";
 import { useContext } from "react";
 import { CursorContext } from "@/contexts/cursor-context";
 
@@ -20,8 +20,8 @@ const DesktopNavlinks = () => {
           onMouseEnter={cursorCtx.onHover}
           onMouseLeave={cursorCtx.onLeave}
           className={cn(
-            "py-2.5 px-4 rounded-3xl text-xs",
-            pathname === link.path ? "text-white bg-black" : "text-black"
+            "py-2.5 px-4 rounded-3xl text-[13px]",
+            pathname === link.path ? "text-white bg-black" : "text-almost-black"
           )}>
           <Link href={link.path}>{link.name}</Link>
         </li>

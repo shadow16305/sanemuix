@@ -4,7 +4,7 @@ import { navLinks } from "@/constants/content";
 import { cn } from "@/libs/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Form from "../form/form";
+import Form from "../form";
 
 const MobileNavlinks = ({ toggleOpen }: { toggleOpen: () => void }) => {
   const pathname = usePathname();
@@ -16,7 +16,7 @@ const MobileNavlinks = ({ toggleOpen }: { toggleOpen: () => void }) => {
           key={link.name}
           className={cn(
             "py-2.5 px-4 rounded-3xl text-xl text-center",
-            pathname === link.path ? "text-white bg-black" : "text-black"
+            pathname === link.path ? "text-white bg-black" : "text-almost-black"
           )}>
           <Link href={link.path} onClick={toggleOpen}>
             {link.name}

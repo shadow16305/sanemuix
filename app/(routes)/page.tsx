@@ -28,6 +28,7 @@ export default function Home() {
           text_4_left="Graphic Designer Intern @ Aegean University"
           text_4_right="2019-2019"
           text_right_size="md:text-[1.3em]"
+          width="2xl:w-[62%]"
         />
       </Container>
     </>

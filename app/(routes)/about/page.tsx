@@ -6,7 +6,7 @@ import InfoList from "@/components/ui/info-list";
 const AboutPage = () => {
   return (
     <Container className="pt-32">
-      <h1 className="text-[28px] lg:text-[4em] leading-[1.15]">
+      <h1 className="text-[28px] lg:text-[4em] leading-[1.1] tracking-[-.03em]">
         Hi! I’m Sanem, a Canadian-Turkish digital designer living in Toronto. I help create brand & digital experiences
         for companies.
       </h1>

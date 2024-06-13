@@ -13,7 +13,7 @@ const config = {
       },
     },
     extend: {
-      colors: { "grey-40": "#9fa0a3", black: "#131417" },
+      colors: { "grey-40": "#9fa0a3", "almost-black": "#131417" },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

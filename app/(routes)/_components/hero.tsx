@@ -1,8 +1,8 @@
 const Hero = () => {
   return (
     <section className="w-full mx-auto flex flex-col-reverse md:flex-row md:justify-between pt-24 md:pt-32 lg:pt-40 xl:pt-56">
-      <div className="flex flex-col text-xs mt-6 md:mt-0 justify-between flex-1 lg:pt-4">
-        <p className="md:max-w-40 leading-normal">
+      <div className="flex flex-col text-[13.5px] mt-6 md:mt-0 justify-between flex-1 lg:pt-4">
+        <p className="md:max-w-44 leading-normal">
           As a UX designer, I'm driven by the thrill of dissecting the intricacies of user interaction, understanding
           how even the tiniest elements contribute to a seamless experience. This perspective enables me to shape
           digital landscapes into captivating and user-centric environments.

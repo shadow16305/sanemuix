@@ -24,23 +24,28 @@ const CategoryPage = ({ params }: { params: { categorySlug: string } }) => {
         </Link>
       </div>
       <h1 className="text-[28px] md:text-[4em] mb-4">
+        {currentCategory === "shopify" && "Shopify"}
         {currentCategory === "concept" && "Concept"}
         {currentCategory === "web-design" && "Web Design"}
         {currentCategory === "art-direction" && "Art Direction"}
       </h1>
       <Categories activeCategory={currentCategory} />
       <div className="flex flex-wrap justify-between gap-y-7 mt-12">
-        {filteredProjects.map((project) => (
-          <Card
-            key={project.name}
-            name={project.name}
-            imgSrc={project.img}
-            location={project.location}
-            date={project.date}
-            link={project.path}
-            className="md:w-[49%] w-full"
-          />
-        ))}
+        {filteredProjects.length > 0 ? (
+          filteredProjects.map((project) => (
+            <Card
+              key={project.name}
+              name={project.name}
+              imgSrc={project.img}
+              location={project.location}
+              date={project.date}
+              link={project.path}
+              className="md:w-[49%] w-full"
+            />
+          ))
+        ) : (
+          <p>No projects yet...</p>
+        )}
       </div>
     </Container>
   );

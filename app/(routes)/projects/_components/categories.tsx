@@ -10,9 +10,10 @@ const Categories = ({ activeCategory }: { activeCategory?: string }) => {
           <Link
             href={`/projects/${category.name}`}
             className={cn(
-              "text-black border text-xs border-black rounded-3xl px-2.5 py-1.5 transition-colors hover:text-white hover:bg-black",
+              "text-almost-black border text-xs border-black rounded-3xl px-2.5 py-1.5 transition-colors hover:text-white hover:bg-black",
               category.name === activeCategory && "bg-black text-white"
             )}>
+            {category.name === "shopify" && "Shopify"}
             {category.name === "concept" && "Concept"}
             {category.name === "web-design" && "Web Design"}
             {category.name === "art-direction" && "Art Direction"}

@@ -1,4 +1,4 @@
-import Form from "./form/form";
+import Form from "./form";
 import Container from "./ui/container";
 
 const Footer = () => {
