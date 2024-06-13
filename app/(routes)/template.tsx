@@ -9,7 +9,7 @@ const variants = {
 
 const Template = ({ children }: { children: React.ReactNode }) => {
   return (
-    <motion.main variants={variants} initial="hidden" animate="enter" transition={{ type: "linear", delay: 0.8 }}>
+    <motion.main variants={variants} initial="hidden" animate="enter" transition={{ type: "linear", delay: 0.2 }}>
       {children}
     </motion.main>
   );

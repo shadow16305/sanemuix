@@ -7,7 +7,7 @@ import Footer from "@/components/footer";
 import { CursorContextProvider } from "@/contexts/cursor-context";
 import DotCursor from "@/components/ui/dot-cursor";
 import PageTransition from "@/components/ui/page-transition";
-import Template from "@/app/(routes)/template";
+// import Template from "@/app/(routes)/template";
 
 const manrope = Manrope({ subsets: ["latin"] });
 
@@ -25,12 +25,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={cn("bg-[#f5f5f5] overflow-x-hidden text-[1vw]", manrope.className)}>
         <CursorContextProvider>
-          <Template>
-            <MainNavigation />
-            <DotCursor />
-            <PageTransition />
-            {children}
-          </Template>
+          {/* <Template> */}
+          <MainNavigation />
+          <DotCursor />
+          <PageTransition />
+          {children}
+          {/* </Template> */}
           <Footer />
         </CursorContextProvider>
       </body>
