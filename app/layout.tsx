@@ -6,6 +6,7 @@ import { cn } from "@/libs/utils";
 import Footer from "@/components/footer";
 import { CursorContextProvider } from "@/contexts/cursor-context";
 import DotCursor from "@/components/ui/dot-cursor";
+import Template from "./template";
 
 const manrope = Manrope({ subsets: ["latin"] });
 
@@ -25,7 +26,7 @@ export default function RootLayout({
         <CursorContextProvider>
           <MainNavigation />
           <DotCursor />
-          {children}
+          <Template>{children}</Template>
           <Footer />
         </CursorContextProvider>
       </body>
