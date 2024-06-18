@@ -169,3 +169,49 @@ export const categories = [
     name: "web-design",
   },
 ];
+
+export const services = [
+  {
+    name: "It Support On Call",
+    description: "",
+  },
+  {
+    name: "PACS and RIS Support",
+    description: "",
+  },
+  {
+    name: "Website & Email",
+    description: "",
+  },
+  {
+    name: "Phone System",
+    description: "",
+  },
+  {
+    name: "Data Storage",
+    description: "",
+  },
+  {
+    name: "Printing",
+    description: "",
+  },
+  {
+    name: "Networking",
+    description: "",
+  },
+];
+
+export const menuInfo = [
+  {
+    icon: "/images/icons/location-pin.png",
+    text: "Toronto/ON",
+  },
+  {
+    icon: "/images/icons/phone-icon.png",
+    text: "(647) 229 5559",
+  },
+  {
+    icon: "/images/icons/screen-icon.png",
+    text: "Share your screen",
+  },
+];

@@ -1,4 +1,4 @@
-import Form from "./form";
+import Menu from "./menu";
 import Container from "./ui/container";
 
 const Footer = () => {
@@ -12,7 +12,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col items-center py-20 lg:py-28 xl:py-48">
           <span className="text-grey-40">Have a nice project?</span>
-          <Form />
+          <Menu />
         </div>
         <p className="text-xs text-grey-40 text-center md:text-start">
           © All rights reserved. Template by Sanem Korkmaz.

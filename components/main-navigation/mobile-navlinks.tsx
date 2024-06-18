@@ -4,7 +4,7 @@ import { navLinks } from "@/constants/content";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Form from "../form";
+import Form from "../menu";
 
 const MobileNavlinks = ({ toggleOpen }: { toggleOpen: () => void }) => {
   const pathname = usePathname();
