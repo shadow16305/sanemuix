@@ -29,7 +29,7 @@ const MainNavigation = () => {
               href="/"
               onMouseEnter={cursorCtx.onHover}
               onMouseLeave={cursorCtx.onLeave}
-              className="lg:text-sm font-semibold text-[#333333] hover:text-neutral-600">
+              className="text-sm lg:text-sm font-semibold text-[#333333] hover:text-neutral-600">
               Sanemuix
             </Link>
             <span className="text-xs text-grey-40">Toronto,ON</span>

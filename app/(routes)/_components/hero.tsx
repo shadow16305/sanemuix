@@ -12,7 +12,7 @@ const Hero = () => {
           <span>01-02-2024</span>
         </div>
       </div>
-      <h1 className="text-[12vw] md:text-[5.6em] md:w-[55%] tracking-[-0.03em] leading-[1.1] mr-24">
+      <h1 className="text-[7.5vw] md:text-[5.6em] md:w-[55%] tracking-[-0.03em] leading-[1.1] mr-24">
         Digital Designer and Art Director currently based in Toronto.
       </h1>
     </section>

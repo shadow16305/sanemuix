@@ -40,32 +40,26 @@ const Menu = ({ navigation }: { navigation?: boolean }) => {
             <X />
           </DrawerClose>
         </DrawerHeader>
-        <DrawerDescription className="text-xl mt-8">
-          <div className="my-5 flex w-full max-w-[90%] flex-wrap gap-2 lg:my-12 lg:max-w-[508px]">
+        <DrawerDescription className="text-xl mt-8 flex flex-col justify-center h-full">
+          <div className="my-5 flex w-full md:max-w-[90%] justify-center flex-wrap gap-1 md:gap-2 lg:my-12 lg:max-w-[508px]">
             {services.map((service, index) => (
               <div
                 key={service.name}
                 className={cn(
-                  "hover:text-orange-20 bg-black rounded-xl text-white py-2 text-center text-[8px] font-extrabold transition lg:py-5 lg:text-sm",
+                  "hover:text-orange-20 bg-black rounded-xl text-white py-4 text-center text-xs font-extrabold transition lg:py-5 lg:text-sm",
                   index === 0 || index === 1 || index === 5 || index === 6
-                    ? "w-[110px] lg:w-[250px]"
-                    : "w-[70px] lg:w-[164px]"
+                    ? "w-[49%] lg:w-[250px]"
+                    : "w-[32%] lg:w-[164px]"
                 )}>
                 {service.name}
               </div>
             ))}
           </div>
-          <p className="pl-6 text-[9px] font-extrabold text-black lg:text-base">Need IT Help?</p>
-          <ul className="mt-2 space-y-6 pb-7 pl-5 lg:mt-8">
-            {menuInfo.map((item) => (
-              <li key={item.text} className="flex items-center gap-x-2 text-[9px] text-black lg:text-sm">
-                <div className="relative size-3 lg:size-6 invert">
-                  <Image src={item.icon} alt={item.text} fill />
-                </div>
-                <span>{item.text}</span>
-              </li>
-            ))}
-            <li className="flex items-center gap-x-2 text-[9px] text-black lg:text-sm">
+          <p className="md:pl-6 text-sm font-extrabold text-black lg:text-base text-center md:text-start">
+            Need IT Help?
+          </p>
+          <ul className="mt-2 gap-y-6 pb-7 md:pl-5 lg:mt-8 flex md:flex-col flex-wrap justify-between">
+            <li className="flex items-center gap-x-2 text-black text-sm">
               <div className="relative size-3 lg:size-6 invert">
                 <Image src="/images/icons/message-icon.png" alt="email" fill />
               </div>
@@ -73,6 +67,14 @@ const Menu = ({ navigation }: { navigation?: boolean }) => {
                 <span>sanemuix@gmail.com</span>
               </a>
             </li>
+            {menuInfo.map((item) => (
+              <li key={item.text} className="flex items-center gap-x-2 text-black text-sm">
+                <div className="relative size-3 lg:size-6 invert">
+                  <Image src={item.icon} alt={item.text} fill />
+                </div>
+                <span>{item.text}</span>
+              </li>
+            ))}
           </ul>
         </DrawerDescription>
       </DrawerContent>

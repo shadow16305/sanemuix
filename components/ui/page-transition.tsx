@@ -43,7 +43,7 @@ const PageTransition = () => {
             initial={{ opacity: 1 }}
             animate={{ opacity: 0 }}
             transition={{ duration: 0.1, delay: 0.6 }}
-            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-black text-4xl">
+            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-black text-3xl md:text-4xl whitespace-nowrap">
             Sanem Korkmaz
           </motion.p>
         </motion.div>

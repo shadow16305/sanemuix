@@ -11,7 +11,7 @@ const Footer = () => {
           <span>13.0056'' N, 33.6660'' W</span>
         </div>
         <div className="flex flex-col items-center py-20 lg:py-28 xl:py-48">
-          <span className="text-grey-40">Have a nice project?</span>
+          <span className="text-grey-40 text-base">Have a nice project?</span>
           <Menu />
         </div>
         <p className="text-xs text-grey-40 text-center md:text-start">
