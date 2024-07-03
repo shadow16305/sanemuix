@@ -36,7 +36,7 @@ const Menu = ({ navigation }: { navigation?: boolean }) => {
       <DrawerContent className=" lg:w-[600px] md:w-2/3 py-6 md:py-16 px-6 !backdrop-blur-xl">
         <DrawerHeader className="flex justify-between">
           <DrawerTitle className="text-xs">Our Services</DrawerTitle>
-          <DrawerClose>
+          <DrawerClose onMouseEnter={cursorCtx.onHover} onMouseLeave={cursorCtx.onLeave}>
             <X />
           </DrawerClose>
         </DrawerHeader>
@@ -63,7 +63,12 @@ const Menu = ({ navigation }: { navigation?: boolean }) => {
               <div className="relative size-3 lg:size-6 invert">
                 <Image src="/images/icons/message-icon.png" alt="email" fill />
               </div>
-              <a data-after="sanemuix@gmail.com" href="mailto:sanemuix@gmail.com" className="pseudo-text-effect">
+              <a
+                data-after="sanemuix@gmail.com"
+                onMouseEnter={cursorCtx.onHover}
+                onMouseLeave={cursorCtx.onLeave}
+                href="mailto:sanemuix@gmail.com"
+                className="pseudo-text-effect">
                 <span>sanemuix@gmail.com</span>
               </a>
             </li>

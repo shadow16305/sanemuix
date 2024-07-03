@@ -20,7 +20,7 @@ const DesktopNavlinks = () => {
           onMouseEnter={cursorCtx.onHover}
           onMouseLeave={cursorCtx.onLeave}
           className={cn(
-            "py-2.5 px-4 rounded-3xl text-[13px]",
+            "py-2.5 px-4 rounded-3xl text-[13px] transition-all duration-500",
             pathname === link.path ? "text-white bg-black" : "text-almost-black"
           )}>
           <Link href={link.path}>{link.name}</Link>
